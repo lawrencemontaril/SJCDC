@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!-- Page title -->
+	<title>SJCDC - Enrollment</title>
+	<!-- Page icon -->
+	<link rel="icon" href="images/logo.png">
+	<!-- Link stylesheet -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+	<!-- Raleway font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+
+<body id="enrollment">
+
+<!-- SJCDC ENROLLMENT PAGE -->
+<!-- PATH: SJCDC/enrollment.html -->
+
+<header id="header">
+
+	<!-- The bar used for navigation across webpages -->
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+	</div>
+	<nav>
+		<ul class="nav_links">
+			<li><a href="index.html">HOME</a></li>
+			<li><a href="bed.html">BASIC EDUCATION</a></li>
+			<li><a href="shs.html">SENIOR HIGH SCHOOL</a></li>
+			<li><a href="college.html">COLLEGE</a></li>
+		</ul>
+	</nav>
+	<a class="enroll"  href="enrollment.html" class="button-selected">ENROLL NOW!</a>
+
+</header>
+
+<!-- The main content of the page -->
+<main>
+
+	<h1 class="title" style="margin-bottom: 800px">ENROLLMENT</h1>
+
+	<!-- ENROLLMENT FORM -->
+	<form>
+		<h4>Student Information</h4>
+		<input type="text" placeholder="First Name">
+		<input type="text" placeholder="Last Name">
+		<label for="sex">Sex</label>
+		<select name="sex">
+			<option value="male">Male</option>
+			<option value="saab">Female</option>
+		</select>
+		<br>
+		<input type="tel" placeholder="Phone Number" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+		<input type="text" placeholder="Primary Address" style="padding-right: 4rem;">
+
+		<br><br><br>
+
+		<h4>Parent/Guardian Information</h4>
+		<input type="text" placeholder="Mother's First Name">
+		<input type="text" placeholder="Mother's Last Name">
+		<input type="text" placeholder="Father's First Name">
+		<input type="text" placeholder="Father's Last Name">
+		<br>
+		<label>Mother's birthdate:</label>
+		<input type="date">
+		<label>Father's birthdate:</label>
+		<input type="date">
+
+
+		<br>
+		<input type="submit">
+	</form>
+
+</main>
+
+<!-- Contact information of the page -->
+<section id="contact">
+	<center>
+		<p>OFFICIAL ACCOUNTS</p>
+		<br>
+		<!-- Facebook -->
+		<a href="https://www.facebook.com/stjudecollegedasmarinas" target="_blank"><img src="images/facebook.png"></a>
+		<!-- Twitter -->
+		<a href="#contact"><img src="images/twitter.png"></a>
+		<!-- Instagram -->
+		<a href="#contact"><img src="images/instagram.png"></a>
+		<!-- YouTube -->
+		<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
+	</center>
+</section>
+
+<footer>
+	<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+</footer>
+
+<script src="scripts/dept.js"></script>
+</body>
+</html>
