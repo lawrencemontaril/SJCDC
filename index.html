@@ -7,134 +7,149 @@
 	<!-- Page icon -->
 	<link rel="icon" href="images/logo.png">
 	<!-- Link stylesheet -->
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Raleway font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
 
-<body id="homepage">
+<body id="homepage"></body>
 
 <!-- SJCDC HOMEPAGE -->
 <!-- PATH: SJCDC/index.html -->
 
-<header id="header">
-
-	<!-- The bar used for navigation across webpages -->
-		<div class="logo">
-			<a href="index.html"><img src="images/logo.png" alt="logo"></a>
-		</div>
-		<nav>
-			<ul class="nav_links">
-				<li><a href="index.html" class="button-selected">HOME</a></li>
-				<li><a href="bed.html">BASIC EDUCATION</a></li>
-				<li><a href="shs.html">SENIOR HIGH SCHOOL</a></li>
-				<li><a href="college.html">COLLEGE</a></li>
-			</ul>
-		</nav>
-		<a class="enroll" href="enrollment.html">ENROLL NOW!</a>
-
+<header>
+<!-- The bar used for navigation across webpages -->
+<div id="navbar">
+	<div class="logo">
+		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
+	</div>
+	
+	<nav>
+		<ul class="nav_links">
+			<li><a href="index.html" class="button-selected">HOME</a></li>
+			<li><a href="bed.html">BASIC EDUCATION</a></li>
+			<li><a href="shs.html">SENIOR HIGH SCHOOL</a></li>
+			<li><a href="college.html">COLLEGE</a></li>
+		</ul>
+	</nav>
+	
+	<a class="enroll" href="enrollment.html">PRE-REGISTER NOW!</a>
+</div>
 </header>
 
 <main>
+<div class="page-background">
+	<img src="images/sjcdc-bg1.png">
+	<img src="images/sjcdc.png">
+</div>
 
-	<img class="mask" src="images/sjcdc.png">
-
-	<!-- The main content of the page -->
-	<section id="mission-vision">
-
-		<div class="div-beside">
-			<div class="div-beside-child">
-				<h4>MISSION</h4>
-				<br>
-				<p>We empower all students and stakeholders in achieveing easy access for comprehensive instruction, research and extension services using advanced technology.</p>
-			</div>
-			<div class="div-beside-child">
-				<h4>VISION</h4>
-				<br>
-				<p>We are a premiere institution highly engaged to produce globally competitive professionals.</p>
-			</div>
-		</div>
-
-	</section>
-
-
-	<section id="bed" class="dept">
-
-		<div class="img-txt">
-			<img src="images/bed-students.jpeg">
-			<div class="img-txt-title">
-				<p>Basic Education</p>
-				<br>
-				<a href="bed.html">See page</a>
-			</div>
-		</div>
-		<div class="img-txt-desc">
-			<p>St. Jude College Dasmarinas offers basic education.</p>
-		</div>
-	</section>
-
-
-	<section id="shs" class="dept">
-		
-		<div class="img-txt">
-			<img src="images/shs-students.jpeg">
-			<div class="img-txt-title">
-				<p>Senior High School</p>
-				<br>
-				<a href="college.html">See page</a>
-			</div>
-		</div>
-		<div class="img-txt-desc">
-			<p>St. Jude College Dasmarinas offers basic education.</p>
-		</div>
-
-	</section>
-
-
-	<section id="college" class="dept">
-
-		<div class="img-txt">
-			<img src="images/college-students.jpeg">
-			<div class="img-txt-title">
-				<p>College</p>
-				<br>
-				<a href="college.html">See page</a>
-			</div>
-		</div>
-		<div class="img-txt-desc">
-			<p>St. Jude College Dasmarinas offers basic education.</p>
-		</div>
-
-	</section>
-	
-
-	<!-- Contact information of the page -->
-	<section id="contact">
-		<center>
-			<p>OFFICIAL ACCOUNTS</p>
+<!-- The main content of the page -->
+<section id="mission-vision">
+	<div class="div-beside">
+		<div class="div-beside-child">
+			<h4>MISSION</h4>
 			<br>
-			<!-- Facebook -->
-			<a href="https://www.facebook.com/stjudecollegedasmarinas" target="_blank"><img src="images/facebook.png"></a>
-			<!-- Twitter -->
-			<a href="#contact"><img src="images/twitter.png"></a>
-			<!-- Instagram -->
-			<a href="#contact"><img src="images/instagram.png"></a>
-			<!-- YouTube -->
-			<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
-		</center>
-	</section>
+			<p title="Mission">We empower all students and stakeholders in achieveing easy access for comprehensive instruction, research and extension services using advanced technology.</p>
+		</div>
+		<div class="div-beside-child">
+			<h4>VISION</h4>
+			<br>
+			<p title="Vision">We are a premiere institution highly engaged to produce globally competitive professionals.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Basic Education Section -->
+<section id="bed" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
+			<img src="images/bed-students.jpeg">
+			<div class="program-card-image-header">
+				<p>Basic Education</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+
+		<div class="program-card-text">
+			<p>The aim of basic education is to teach skills and knowledge that are important in life and to secure a foundation of equal education for everyone. Further aims are to support students' humanistic growth and their growth as ethically responsible members of society, and to promote education and equality in society.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Senior High School Section -->
+<section id="shs" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>Senior High School “completes” basic education by making sure that the high school graduate is equipped for work, entrepreneurship, or higher education. This is a step up from the 10-year cycle where high school graduates still need further education (and expenses) to be ready for the world.</p>
+		</div>
+
+		<div class="program-card-image">
+			<img src="images/shs-students.jpeg">
+			<div class="program-card-image-header">
+				<p>Senior High School</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- College Section -->
+<section id="college" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
+			<img src="images/college-students.jpeg">
+			<div class="program-card-image-header">
+				<p>College</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+
+		<div class="program-card-text">
+			<p>In college, you will be able to explore subjects in greater depth than you did in high school. Choose your own courses and class schedule. Decide which extracurricular activities you'll focus on — and how much time you'll give them.</p>
+		</div>
+	</div>
+</section>
+	
+<!-- Contact information of the page -->
+<div id="contact">
+	<center>
+		<p>OFFICIAL ACCOUNTS</p>
+		<br>
+		<!-- Facebook -->
+		<a href="https://www.facebook.com/stjudecollegedasmarinas" target="_blank"><img src="images/facebook.png"></a>
+		<!-- Twitter -->
+		<a href="#contact"><img src="images/twitter.png"></a>
+		<!-- Instagram -->
+		<a href="#contact"><img src="images/instagram.png"></a>
+		<!-- YouTube -->
+		<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
+	</center>
+	<br>
+</div>
 
 </main>
 
-<!-- Copyright formality -->
+<!-- Copyright formality, contacts, address -->
 <footer>
-	
-	<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+	<div>
+		<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+		<p>Contact us: (046) 417-5232 | 0917-630-1064</p>
+		<p>Address: Carlos Trinidad Avenue, Salitran IV City of Dasmarinas Cavite</p>
+	</div>
 
+	<p><b>Developers:</b></p>
+	<div style="padding-top: 0.5rem;">
+		<p>Lawrence Montaril &nbsp;|&nbsp;  09123456789</p>
+		<p>Kim Gabriel Magan &nbsp;|&nbsp; 09123456789</p>
+		<p>Jasper Jon Garcia &nbsp;|&nbsp; 09123456789</p>
+		<p>Jake Carl Marwin Amora &nbsp;|&nbsp; 09123456789</p>
+	</div>
 </footer>
+
 <script src="scripts/index.js"></script>
 </body>
 </html>

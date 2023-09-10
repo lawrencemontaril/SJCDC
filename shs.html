@@ -7,7 +7,7 @@
 	<!-- Page icon -->
 	<link rel="icon" href="images/logo.png">
 	<!-- Link stylesheet -->
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Raleway font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
 <!-- SJCDC SENIOR HIGH SCHOOL PAGE -->
 <!-- PATH: SJCDC/shs.html -->
 
-<header id="header">
-
-	<!-- The bar used for navigation across webpages -->
+<header>
+<!-- The bar used for navigation across webpages -->
+<div id="navbar">
 	<div class="logo">
 		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
 	</div>
+	
 	<nav>
 		<ul class="nav_links">
 			<li><a href="index.html">HOME</a></li>
@@ -33,101 +34,261 @@
 			<li><a href="college.html">COLLEGE</a></li>
 		</ul>
 	</nav>
-	<a class="enroll"  href="enrollment.html">ENROLL NOW!</a>
-
+	
+	<a class="enroll" href="enrollment.html">PRE-REGISTER NOW!</a>
+</div>
 </header>
-
-<img class="mask mask1" src="images/shs.png">
-
 
 <!-- The main content of the page -->
 <main>
+<div class="page-background">
+	<img src="images/shs-bg.jpg">
+	<img src="images/shs.png">
+</div>
 
-	<nav>
-		<ul class="page-nav-links">
-			<li><a href="#">WHAT WE OFFER</a></li>
-			<li><a href="#">REQUIREMENTS</a></li>
-		</ul>
-	</nav>
+<nav>
+	<ul class="page-nav-links">
+		<li><a href="#requirements">REQUIREMENTS</a></li>
+	</ul>
+</nav>
 
-	<div class="container">
-		<h4>Senior Highschool Programs (Grade 11-12)</h4>
-		<ol>
-			<li>Science, Technology, Engineering and Mathematics Strand (Stem)</li>
-			<li>Accountancy, Business and Management Strand (ABM)</li>
-			<li>Humanities and social Science strand (HUMSS)</li>
-			<li>General Academic Strand (GAS)</li>
-			<li>Technical Vocational Livelihood Strand (TVL)</li>
-			<ul>
-				<li>Food and Beverage NC II</li>
-				<li>Housekeeping NC II</li>
-				<li>Cookery NC II</li>
-				<li>Tourism Promotion Services NC II</li>
-				<li>Front Office NC II</li>
-			</ul>
-			<!-- <li>SJCDC CLUB</li>
-			<ul>
-				<li>YES-O YOUTH FOR ENVIRONTMENT IN SCHOOL-ORGANIZATION</li>
-				<li>TADA-THADDEAN ACADEMIC DYNAMIC ACHIEVERS</li>
-				<li>LINGOBRIDGE-LANGUAGE CLUB</li>
-				<li>THE OUTLOOK-THE OFFICIAL SCHOOL PUBLICATION CLUB</li>
-				<li>SCI-TECH HUB (SCience and Technology Club)</li>
-				<li>P.E.E.R.S (Positive Environment and Encouraging Reinforces)</li>
-				<li>SSG Supreme Student Government</Li>
-			</ul> -->
-		</ol>	
-	</div>
-		
-	<div class="container">
-		<h4>Admission Requirements:</h4>
+<div class="container">
+	<h4>Senior Highschool Programs (Grade 11-12)</h4>
+	<ol>
+		<li>Science, Technology, Engineering and Mathematics Strand (Stem)</li>
+		<li>Accountancy, Business and Management Strand (ABM)</li>
+		<li>Humanities and social Science strand (HUMSS)</li>
+		<li>General Academic Strand (GAS)</li>
+		<li>Technical Vocational Livelihood Strand (TVL)</li>
 		<ul>
-			<li>Assessment Exam <i>(for Junior High Only)</i></li>
-			<li>Report Card (Form 138) w/ LRN No.</li>
-			<li>Form 137</li>
-			<li>Certificate of Good Moral Character</li>
-			<li>2pcs 2x2 colored ID Picture white background and name tag</li>
-			<li>2pcs long brown envelopes</li>
-			<li>1 original PSA Birth Certificate</li>
-			<li>2 mailing stamps</li>
-			<li>1pc long white folder</li>
-				
+			<li>Food and Beverage NC II</li>
+			<li>Housekeeping NC II</li>
+			<li>Cookery NC II</li>
+			<li>Tourism Promotion Services NC II</li>
+			<li>Front Office NC II</li>
+			<li>Information and Communications Technology</li>
 		</ul>
-	</div>
+	</ol>	
+	<br>
+</div>
 
-	<section id="shs-stem" class="dept">
-		<div class="img-txt">
+<!-- STEM Section -->
+<section id="shs-stem" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
 			<img src="images/shs-stem.jpg">
-			<div class="img-txt-title">
+			<div class="program-card-image-header">
 				<p>Science, Technology, Engineering, and Mathematics</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
 			</div>
 		</div>
-		<div class="img-txt-desc">
-			<p>The Bachelor of Science in Computer Science degree program is a mathematically rigorous, scientifically oriented curriculum that prepares students to become proficient in all fundamental areas and techniques of computer science.</p>
-		</div>
-		
-	</section>
 
-	<section id="shs-stem" class="dept">
-		<div class="img-txt">
+		<div class="program-card-text">
+			<p>Science, Technology, Engineering, and Mathematics (STEM) is an educational program developed to prepare primary and secondary students for college, graduate study and careers in the fields covered by STEM strand. In addition to subject-specific learning, STEM aims to foster inquiring minds, logical reasoning and collaboration skills.</p>
+		</div>
+	</div>
+</section>
+
+<!-- ABM Section -->
+<section id="shs-abm" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>The Accountancy, Business, and Management (ABM) strand seeks to prepare the young business leaders of tomorrow. ABM strand paves the way for business-related college degrees. It teaches the basic concepts of financial management, accounting, and corporate operations.</p>
+		</div>
+
+		<div class="program-card-image">
 			<img src="images/shs-abm.jpg">
-			<div class="img-txt-title">
-				<p>Science, Technology, Engineering, and Mathematics</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
+			<div class="program-card-image-header">
+				<p>Accountancy, Business and Management</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
 			</div>
 		</div>
-		<div class="img-txt-desc">
-			<p>The Bachelor of Science in Computer Science degree program is a mathematically rigorous, scientifically oriented curriculum that prepares students to become proficient in all fundamental areas and techniques of computer science.</p>
-		</div>
-		
-	</section>
+	</div>
+</section>
 
-</main>
+<!-- HUMSS Section -->
+<section id="shs-humss" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
+			<img src="images/shs-humss.jpg">
+			<div class="program-card-image-header">
+				<p>Humanities and Social Sciences</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+
+		<div class="program-card-text">
+			<p>The HUMSS Senior High School strand is designed for students who intend to take up journalism, communication arts, liberal arts, education, and other social-science related courses in college.</p>
+		</div>
+	</div>
+</section>
+
+<!-- GAS Section -->
+<section id="shs-gas" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>General Academic Strand is for learners who are not yet decided on what course to take in college. It is possible that the learner will be given bridging courses to assess his/her preparedness for the field of study he/she will choose in the future. General Academic Strand will present the option for students to take their electives from specialized subjects of any other strands.</p>
+		</div>
+
+		<div class="program-card-image">
+			<img src="images/shs-gas.png">
+			<div class="program-card-image-header">
+				<p>General Academic Strand</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- TVL Food and Beverage Section -->
+<section id="shs-tvl-food" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
+			<img src="images/shs-tvl-food.jpg">
+			<div class="program-card-image-header">
+				<p>TVL (Food and Beverages NC II)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+
+		<div class="program-card-text">
+			<p>Food and Beverage Services NC II is a technical-vocational program that trains students on the preparation of food plans and meals for restaurants, hotels, canteens, banquets and functions, and basically any establishment that serves food to a large number of people. The program teaches students how to properly welcome guests and take food and beverage orders, promote food and beverage products and provide food and beverage service to guests.</p>
+		</div>
+	</div>
+</section>
+
+<!-- TVL Cookery Section -->
+<section id="shs-tvl-cookery" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>Home Economics (Cookery) is responsive to the ever-changing market of food, restaurant, and hotel industries. The growth of food and hospitality industries demand qualified people to accommodate these needs of customers. Cookery has specialized subjects that are patterned to the standard requirement and the competency-based assessment of TESDA so that whoever wishes to work after SHS can be employed in the food and hospitality industry.</p>
+		</div>
+
+		<div class="program-card-image">
+			<img src="images/shs-tvl-cookery.jpg">
+			<div class="program-card-image-header">
+				<p>TVL (Cookery NC II)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- TVL Housekeeping Section -->
+<section id="shs-tvl-housekeeping" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
+			<img src="images/shs-tvl-housekeeping.png">
+			<div class="program-card-image-header">
+				<p>TVL (Housekeeping NC II)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+
+		<div class="program-card-text">
+			<p>Housekeeping develops the knowledge, skills, and attitudes required for basic housekeeping. It covers housekeeping services, preparing guestrooms, cleaning premises, providing valet or butler services, and laundering linen and guests’ clothes. Specialized topics include core concepts in housekeeping, relevance of the course, and career opportunities as a room or cabin attendant.</p>
+		</div>
+	</div>
+</section>
+
+<!-- TVL Tourism Promotion Services Section -->
+<section id="shs-tvl-tourism" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>The TOURISM PROMOTION SERVICES NC II Qualification consists of competencies that a person must achieve to advocate and sell tourism destination, products and services through technology-based information gathering and application of sales and promotions principles and techniques.</p>
+		</div>
+
+		<div class="program-card-image">
+			<img src="images/shs-tvl-tourism.png">
+			<div class="program-card-image-header">
+				<p>TVL (Tourism Promotion Services NC II)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- TVL Front Office Section -->
+<section id="shs-tvl-tourism" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
+			<img src="images/shs-tvl-front_office.jpg">
+			<div class="program-card-image-header">
+				<p>TVL (Front Office NC II)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+
+		<div class="program-card-text">
+			<p>The FRONT OFFICE SERVICES NC II Qualification consists of competencies that a person must possess in order to be able to conduct the process of making a reservation, registering and checking-in and checking-out a guest in commercial accommodation establishments.</p>
+		</div>
+	</div>
+				
+</section>
+
+<!-- TVL Front Office Section -->
+<section id="shs-tvl-ict" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>Through studies in ICT, you'll discover the best software, practices, and the required programming languages to boost data management and processing efficiency. Students will explore crucial tools from basic programs such as Microsoft Excel to more specialised, analytical platforms such as ZAP, Improvado, and Cohesity.</p>
+		</div>
+
+		<div class="program-card-image">
+			<img src="images/shs-tvl-ict.jpg">
+			<div class="program-card-image-header">
+				<p>TVL (Information and Communications Technology)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<nav>
+	<ul class="page-nav-links">
+		<li><a href="#">BACK TO TOP</a></li>
+	</ul>
+</nav>
+
+<div class="container">
+	<h4 id="requirements">Admission Requirements:</h4>
+	<ul>
+		<li>Assessment Exam <i>(for Junior High Only)</i></li>
+		<li>Report Card (Form 138) w/ LRN No.</li>
+		<li>Form 137</li>
+		<li>Certificate of Good Moral Character</li>
+		<li>2pcs 2x2 colored ID Picture white background and name tag</li>
+		<li>2pcs long brown envelopes</li>
+		<li>1 original PSA Birth Certificate</li>
+		<li>2 mailing stamps</li>
+		<li>1pc long white folder</li>
+	</ul>
+	<br>
+
+	<h4>For Old Students</h4>
+	<ul>
+		<li>Report Card (Form 138) w/ LRN No.</li>
+		<li>Certificate of Good Moral Character</li>
+	</ul>
+	<br>
+
+	<h4>For Transferees:</h4>
+	<ul>
+		<li>Assessment Exam</li>
+		<li>3 pcs 2x2 ID pictures with name tag & white background</li>
+		<li>Transcript of Records</li>
+		<li>Photocopy PSA Birth Certificate</li>
+		<li>Certificate of Eligiblity to transfer</li>
+		<li>Certificate of Good Moral Character</li>
+		<li>2pcs White Mailing Envelopes (long)</li>
+		<li>2pcs Mailing Stamps</li>
+		<li>2pcs Long Brown Envelopes</li>
+		<li>1pc Long White Folder</li>
+	</ul>
+</div>
 
 <!-- Contact information of the page -->
-<section id="contact">
+<div id="contact">
+
 	<center>
 		<p>OFFICIAL ACCOUNTS</p>
 		<br>
@@ -140,12 +301,26 @@
 		<!-- YouTube -->
 		<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
 	</center>
-</section>
+</div>
+	
+</main>
 
 <footer>
-	<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+	<div>
+		<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+		<p>Contact us: (046) 417-5232 | 0917-630-1064</p>
+		<p>Address: Carlos Trinidad Avenue, Salitran IV City of Dasmarinas Cavite</p>
+	</div>
+
+	<p><b>Developers:</b></p>
+	<div style="padding-top: 0.5rem;">
+		<p>Lawrence Montaril &nbsp;|&nbsp;  09123456789</p>
+		<p>Kim Gabriel Magan &nbsp;|&nbsp; 09123456789</p>
+		<p>Jasper Jon Garcia &nbsp;|&nbsp; 09123456789</p>
+		<p>Jake Carl Marwin Amora &nbsp;|&nbsp; 09123456789</p>
+	</div>
 </footer>
 
-<script src="scripts/dept.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>

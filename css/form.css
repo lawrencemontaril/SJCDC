@@ -1,0 +1,41 @@
+/* Enrollment Form */
+.enrollment-form {
+	background-color: #226532;
+}
+
+form-header {
+	text-align: center;
+	color: white;
+	font-size: 1.25rem;
+	font-weight: bold;
+	padding: 0.5rem;
+	display: block;
+	border-bottom: 1px solid white;
+}
+
+.input-flex {
+	display: flex;
+	gap: 1rem;
+	padding: 0.5rem 5%;
+}
+.input-flex-item {
+	flex: 1;
+	width:fit-content;
+}
+.input-flex-item label, .input-flex-item input, .input-flex-item select {
+	display: block;
+	width: 100%;
+}
+.input-flex-item label { color: white; }
+.input-flex-item input, .input-flex-item select {
+	border: none;
+	border-radius: 0.25rem;
+	padding: 0.25rem;
+	height: 2.5rem;
+}
+.input-flex-item input[type="submit"] {
+	display: block;
+	margin: auto;
+	width: 128px;
+	text-align: center;
+}

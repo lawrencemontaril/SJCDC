@@ -7,7 +7,7 @@
 	<!-- Page icon -->
 	<link rel="icon" href="images/logo.png">
 	<!-- Link stylesheet -->
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Raleway font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
 <!-- SJCDC COLLEGE PAGE -->
 <!-- PATH: SJCDC/college.html -->
 
-<header id="header">
-
-	<!-- The bar used for navigation across webpages -->
+<header>
+<!-- The bar used for navigation across webpages -->
+<div id="navbar">
 	<div class="logo">
 		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
 	</div>
+	
 	<nav>
 		<ul class="nav_links">
 			<li><a href="index.html">HOME</a></li>
@@ -33,205 +34,316 @@
 			<li><a href="college.html" class="button-selected">COLLEGE</a></li>
 		</ul>
 	</nav>
-	<a class="enroll"  href="enrollment.html">ENROLL NOW!</a>
-
+	
+	<a class="enroll" href="enrollment.html">PRE-REGISTER NOW!</a>
+</div>
 </header>
-
-<img class="mask mask1" src="images/college.png">
 
 <!-- The main content of the page -->
 <main>
+<div class="page-background">
+	<img src="images/college-bg.jpg">
+	<img src="images/college.png">
+</div>
 
-	<nav>
-		<ul class="page-nav-links">
-			<li><a href="#">WHAT WE OFFER</a></li>
-			<li><a href="#">REQUIREMENTS</a></li>
-		</ul>
-	</nav>
+<nav>
+	<ul class="page-nav-links">
+		<li><a href="#health">ALLIED HEALTH PROGRAMS</a></li>
+		<li><a href="#education">EDUCATION PROGRAMS</a></li>
+		<li><a href="#management">MANAGEMENT PROGRAMS</a></li>
+		<li><a href="#computer">COMPUTER STUDIES</a></li>
+		<li><a href="#requirements">REQUIREMENTS</a></li>
+	</ul>
+</nav>
 
-	<div class="container">
-		<h4>College Programs:</h4>
-		<ol>
-			<li>ALLIED HEALTH PROGRAMS</li>
-			<ul>
-				<li>BS NURSING</li>
-				<li>BS RADIOLOGIC TECHNOLOGY</li>
-				<li>BS PYSCHOLOGY</li>
-			</ul>
+<div class="container">
 
-			<li>EDUCATION PROGRAMS</li>
-			<ul>
-				<li>BACHELOR IN ELEMENTARY EDUCATION</li>
-				<li>BACHELOR IN SECONDARY EDUCTAION</li>
-					<i>Major in English | Major in Filipino</i>
-			</ul>
+	<center>
+		<h4>College Motto</h4>
+		<br>
+		<p>The college motto, Propter Humanitatem alludes to service to humanity. With the spirit of St. Jude Thaddeus, we advocate an education for the service of the community and the society-at-large and for the Kingdom of God.</p>
+	<br>
+	</center>
+	<h4>Core Values</h4>
+		<br>
+		<p><b>S</b> - Scholarly Pursuit</p>
+		<p><b>J</b> - Just and humane regard for people</p>
+		<p><b>C</b> - Commitment to Excellence</p>
+		<p><b>D</b> - Diversity with purpose</p>
+		<p><b>C</b> - Compassion to Professional</p>
+	<br>
 
-			<li>MANAGEMENT PROGRAMS</li>
-			<ul>
-				<li>BS BUSINESS ADMINSTRATION</li>
-				<li>BS ACCOUNTANCY</li>
-				<li>BS HOSPITALITY MANAGEMENT</li>
-			</ul>
-
-			<li>COMPUTER STUDIES</li>
-			<ul>
-				<li>BS COMPUTER SCIENCE</li>
-			</ul>
-		</ol>
-	</div>
-
-	<div class="container">
-		<h4>Admission Requirements:</h4>
+	<h4 id="offers"> College Programs: </h4>
+	<ol>
+		<li>ALLIED HEALTH PROGRAMS</li>
 		<ul>
-			<li>Assessment Exam <i>(for Junior High Only)</i></li>
-			<li>Report Card (Form 138) w/ LRN No.</li>
-			<li>Form 137</li>
-			<li>Certificate of Good Moral Character</li>
-			<li>2pcs 2x2 colored ID Picture white background and name tag</li>
-			<li>2pcs long brown envelopes</li>
-			<li>1 original PSA Birth Certificate</li>
-			<li>2 mailing stamps</li>
-			<li>1pc long white folder</li>
-			<li>Diploma/Certificate of Graduation</li>	
+			<li>BS NURSING</li>
+			<li>BS RADIOLOGIC TECHNOLOGY</li>
+			<li>BS PYSCHOLOGY</li>
 		</ul>
-	</div>
 
-	<div class="container">
-		<h4>For Transferees:</h4>
+		<li>EDUCATION PROGRAMS</li>
 		<ul>
-			<li>Assessment Exam</li>
-			<li>3 pcs 2x2 ID pictures with name tag & white background</li>
-			<li>Transcript of Records</li>
-			<li>Photocopy PSA Birth Certificate</li>
-			<li>Certificate of Eligiblity to transfer</li>
-			<li>Certificate of Good Moral Character</li>
-			<li>2pcs White Mailing Envelopes (long)</li>
-			<li>2pcs Mailing Stamps</li>
-			<li>2pcs Long Brown Envelopes</li>
-			<li>1pc Long White Folder</li>
+			<li>BACHELOR IN ELEMENTARY EDUCATION</li>
+			<li>BACHELOR IN SECONDARY EDUCTAION</li>
+				<i>Major in English | Major in Filipino</i>
 		</ul>
+
+		<li>MANAGEMENT PROGRAMS</li>
+		<ul>
+			<li>BS BUSINESS ADMINSTRATION</li>
+			<li>BS ACCOUNTANCY</li>
+			<li>BS HOSPITALITY MANAGEMENT</li>
+		</ul>
+
+		<li>COMPUTER STUDIES</li>
+		<ul>
+			<li>BS COMPUTER SCIENCE</li>
+		</ul>
+	</ol>
+	<br>
+
+</div>
+
+<h4 class="health category" id="health">
+	ALLIED HEALTH PROGRAMS
+</h4>
+
+<!-- BSN Section -->
+<section id="college-bsn" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bsn.jpeg">
+		<div class="img-txt-title">
+			<p>Bachelor of Science in Nursing</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
 	</div>
 
-	<!-- BSN Section -->
-	<section id="college-bsn" class="dept">
+	<h4>Student Gallery</h4>
+	<div class="img-gallery">
+		<img src="images/college-bsn-gallery.jpg">
+		<img src="images/college-bsn-gallery1.jpg">
+		<img src="images/college-bsn-gallery2.jpg">
+	</div>
 
-		<div class="img-txt">
-			<img src="images/college-bsn.jpeg">
-			<div class="img-txt-title">
-				<p>Bachelor of Science in Nursing</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
-			</div>
+	<div class="img-txt-desc">
+		<p>Bachelor of Science in Nursing (BSN) is a four-year program that includes general education, major, and professional nursing courses. From the first to the fourth year, clinical classes are embedded with a focus on nursing principles and related learning experiences (RLEs).</p>
+	</div>
+
+</section>
+
+<!-- BSRT Section -->
+<section id="college-bsrt" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bsrt.jpg">
+		<div class="img-txt-title">
+			<p>Bachelor of Science in Radiologic Technology</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
 		</div>
+	</div>
 
-		<div class="img-txt-desc">
-			<p>Bachelor of Science in Nursing (BSN) is a four-year program that includes general education, major, and professional nursing courses. From the first to the fourth year, clinical classes are embedded with a focus on nursing principles and related learning experiences (RLEs).</p>
-		</div>
-
-	</section>
-
-	<!-- BSRT Section -->
-	<section id="college-bsrt" class="dept">
-
-		<div class="img-txt">
-			<img src="images/college-bsn.jpeg">
-			<div class="img-txt-title">
-				<p>Bachelor of Science in Radiologic Technology</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
-			</div>
-		</div>
-
-		<div class="img-txt-desc">
-			<p>bsrt desc here</p>
-		</div>
-		
-	</section>
-
-	<!-- BSHM Section -->
-	<section id="college-bshm" class="dept">
-
-		<div class="img-txt">
-			<img src="images/college-bshm.png">
-			<div class="img-txt-title">
-				<p>Bachelor of Science in Hospitality Management</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
-			</div>
-		</div>
-
-		<h4>Student Gallery</h4>
-		<div class="img-gallery">
-			<img src="images/college-bshm-gallery.jpg">
-			<img src="images/college-bshm-gallery1.jpg">
-			<img src="images/college-bshm-gallery2.jpg">
-		</div>
-
-		<div class="img-txt-desc">
-			<p>The Bachelor of Science in Hospitality Management (BSHM) is a four-year degree program that covers the process of planning, development, human resource management of the different aspects of the hotel, restaurant, and resorts operations. The program also intends to teach entrepreneurship skills.</p>
-		</div>
-
-	</section>
-
-	<!-- BEED/BSED Section -->
-	<section id="college-educ" class="dept">
-
-		<div class="img-txt">
-			<img src="images/college-educ-gallery.jpg">
-			<div class="img-txt-title">
-				<p>Bachelor of Elementary Education/<br>Bachelor of Secondary Education</p>
-				<i>Major in Filipino & English</i>
-				<br>
-				<br>
-				<a href="enrollment.html">Enroll</a>
-			</div>
-		</div>
-
-		<h4>Student Gallery</h4>
-		<div class="img-gallery">
-			<img src="images/college-educ-gallery.jpg">
-			<img src="images/college-educ-gallery1.jpg">
-			<img src="images/college-educ-gallery2.jpg">
-		</div>
-
-		<div class="img-txt-desc">
-			<h4>Elementary Education</h4>
-			<p>The Bachelor of Elementary Education is an undergraduate teacher degree program designed to prepare individuals intending to teach in the elementary level. It aims to develop highly motivated and competent teachers specializing in the content and pedagogy for elementary education.</p>
-			<h4>Secondary Education</h4>
-			<p>The Bachelor of Secondary Education is a four-year degree program and a board course with a primary goal of providing the students with a solid understanding of the discipline through theoretical and practical components of the curriculum.</p>
-		</div>
-
-	</section>
-
-	<!-- BSCS Section -->
-	<section id="college-bscs" class="dept">
-
-		<div class="img-txt">
-			<img src="images/college-bscs.jpg">
-			<div class="img-txt-title">
-				<p>Bachelor of Science in Computer Science</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
-			</div>
-		</div>
-		
-		<h4>Student Gallery</h4>
-		<div class="img-gallery">
-			<img src="images/college-bscs-gallery.jpg">
-			<img src="images/college-bscs-gallery1.jpg">
-			<img src="images/college-bscs-gallery2.jpg">
-		</div>
-
-		<div class="img-txt-desc">
-			<p>The Bachelor of Science in Computer Science degree program is a mathematically rigorous, scientifically oriented curriculum that prepares students to become proficient in all fundamental areas and techniques of computer science.</p>
-		</div>
-		
-	</section>
-
-</main>
+	<div class="img-txt-desc">
+		<p>The Bachelor of Science in Radiologic Technology or BS RadTech is a four-year degree program that trains students on operating various medical equipment that include CT scanners, MRIs, and X-rays. Radiologic Technologists perform imaging examinations to patients</p>
+	</div>
 	
+</section>
+
+<!-- BSPsych Section -->
+<section id="college-bsp" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bsp.jpg">
+		<div class="img-txt-title">
+			<p>Bachelor of Science in Psychology</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
+	</div>
+
+	<div class="img-txt-desc">
+		<p>
+			Psychology majors develop a broad understanding of human behavior as well as the skills to understand and interpret research findings concerning human behavior. The psychology curriculum includes courses in cognitive, developmental, behavioral and neural studies, learning, personality, social and clinical psychology.</p>
+	</div>
+	
+</section>
+
+<h4 class="education category" id="education">
+	EDUCATION PROGRAMS
+</h4>
+
+<!-- BEED/BSED Section -->
+<section id="college-educ" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-educ.jpg">
+		<div class="img-txt-title">
+			<p>Bachelor of Elementary Education/<br>Bachelor of Secondary Education</p>
+			<i>Major in Filipino & English</i>
+			<br>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
+	</div>
+
+	<h4>Student Gallery</h4>
+	<div class="img-gallery">
+		<img src="images/college-educ-gallery.jpg">
+		<img src="images/college-educ-gallery1.jpg">
+		<img src="images/college-educ-gallery2.jpg">
+	</div>
+
+	<div class="img-txt-desc">
+		<h4>Elementary Education</h4>
+		<p>The Bachelor of Elementary Education is an undergraduate teacher degree program designed to prepare individuals intending to teach in the elementary level. It aims to develop highly motivated and competent teachers specializing in the content and pedagogy for elementary education.</p>
+		<h4>Secondary Education</h4>
+		<p>The Bachelor of Secondary Education is a four-year degree program and a board course with a primary goal of providing the students with a solid understanding of the discipline through theoretical and practical components of the curriculum.</p>
+	</div>
+
+</section>
+
+<h4 class="management category" id="management">
+	MANAGEMENT PROGRAMS
+</h4>
+
+<!-- BBA Section -->
+<section id="college-bba" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bba.png">
+		<div class="img-txt-title">
+			<p>Bachelor of Business Administration</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
+	</div>
+
+	<div class="img-txt-desc">
+		<p>The Bachelor of Science in Hospitality Management (BSHM) is a four-year degree program that covers the process of planning, development, human resource management of the different aspects of the hotel, restaurant, and resorts operations. The program also intends to teach entrepreneurship skills.</p>
+	</div>
+
+</section>
+
+<!-- BS Accouting Section -->
+<section id="college-bsa" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bsa.jpg">
+		<div class="img-txt-title">
+			<p>Bachelor of Science in Accountancy</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
+	</div>
+
+	<div class="img-txt-desc">
+		<p>Bachelor of Science in Accountancy (BSA) is a degree program that is designed to deliver accounting education to people who are interested to build a career in the field of accountancy – whether as a general accountant or as a public accountant licensed to provide assurance and related services.</p>
+	</div>
+
+</section>
+
+<!-- BSHM Section -->
+<section id="college-bshm" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bshm.png">
+		<div class="img-txt-title">
+			<p>Bachelor of Science in Hospitality Management</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
+	</div>
+
+	<h4>Student Gallery</h4>
+	<div class="img-gallery">
+		<img src="images/college-bshm-gallery.jpg">
+		<img src="images/college-bshm-gallery1.jpg">
+		<img src="images/college-bshm-gallery2.jpg">
+	</div>
+
+	<div class="img-txt-desc">
+		<p>The Bachelor of Science in Hospitality Management (BSHM) is a four-year degree program that covers the process of planning, development, human resource management of the different aspects of the hotel, restaurant, and resorts operations. The program also intends to teach entrepreneurship skills.</p>
+	</div>
+
+</section>
+
+<h4 class="computer category" id="computer">
+	COMPUTER STUDIES
+</h4>
+
+<!-- BSCS Section -->
+<section id="college-bscs" class="dept">
+
+	<div class="img-txt">
+		<img src="images/college-bscs.jpg">
+		<div class="img-txt-title">
+			<p>Bachelor of Science in Computer Science</p>
+			<br>
+			<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+		</div>
+	</div>
+	
+	<h4>Student Gallery</h4>
+	<div class="img-gallery">
+		<img src="images/college-bscs-gallery.jpg">
+		<img src="images/college-bscs-gallery1.jpg">
+		<img src="images/college-bscs-gallery2.jpg">
+	</div>
+
+	<div class="img-txt-desc">
+		<p>The Bachelor of Science in Computer Science degree program is a mathematically rigorous, scientifically oriented curriculum that prepares students to become proficient in all fundamental areas and techniques of computer science.</p>
+	</div>
+	
+</section>
+
+<nav>
+	<ul class="page-nav-links">
+		<li><a href="#">BACK TO TOP</a></li>
+	</ul>
+</nav>
+<div class="container">
+	<h4 id="requirements">Admission Requirements:</h4>
+	<ul>
+		<li>Report Card (Form 138) w/ LRN No.</li>
+		<li>Form 137</li>
+		<li>Certificate of Good Moral Character</li>
+		<li>2pcs 2x2 colored ID Picture white background and name tag</li>
+		<li>2pcs long brown envelopes</li>
+		<li>1 original PSA Birth Certificate</li>
+		<li>2 mailing stamps</li>
+		<li>1pc long white folder</li>
+		<li>Diploma/Certificate of Graduation</li>	
+	</ul>
+	<br>
+
+	<h4>For Old Students</h4>
+	<ul>
+		<li>Report Card (Form 138) w/ LRN No.</li>
+		<li>Certificate of Good Moral Character</li>
+	</ul>
+	<br>
+
+	<h4>For Transferees:</h4>
+	<ul>
+		<li>Assessment Exam</li>
+		<li>3 pcs 2x2 ID pictures with name tag & white background</li>
+		<li>Transcript of Records</li>
+		<li>Photocopy PSA Birth Certificate</li>
+		<li>Certificate of Eligiblity to transfer</li>
+		<li>Certificate of Good Moral Character</li>
+		<li>2pcs White Mailing Envelopes (long)</li>
+		<li>2pcs Mailing Stamps</li>
+		<li>2pcs Long Brown Envelopes</li>
+		<li>1pc Long White Folder</li>
+	</ul>
+</div>
+
 <!-- Contact information of the page -->
-<section id="contact">
+<div id="contact">
+
 	<center>
 		<p>OFFICIAL ACCOUNTS</p>
 		<br>
@@ -244,12 +356,27 @@
 		<!-- YouTube -->
 		<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
 	</center>
-</section>
+
+</div>
+	
+</main>
 
 <footer>
-	<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+	<div>
+		<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+		<p>Contact us: (046) 417-5232 | 0917-630-1064</p>
+		<p>Address: Carlos Trinidad Avenue, Salitran IV City of Dasmarinas Cavite</p>
+	</div>
+
+	<p><b>Developers:</b></p>
+	<div style="padding-top: 0.5rem;">
+		<p>Lawrence Montaril &nbsp;|&nbsp;  09123456789</p>
+		<p>Kim Gabriel Magan &nbsp;|&nbsp; 09123456789</p>
+		<p>Jasper Jon Garcia &nbsp;|&nbsp; 09123456789</p>
+		<p>Jake Carl Marwin Amora &nbsp;|&nbsp; 09123456789</p>
+	</div>
 </footer>
 
-<script src="scripts/dept.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>

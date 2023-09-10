@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<head>
 <head>
 	<!-- Page title -->
-	<title>SJCDC - Pre-registration</title>
+	<title>SJCDC - Login</title>
 	<!-- Page icon -->
 	<link rel="icon" href="images/logo.png">
 	<!-- Link stylesheet -->
@@ -14,11 +14,10 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 </head>
+<body>
 
-<body id="enrollment">
-
-<!-- SJCDC ENROLLMENT PAGE -->
-<!-- PATH: SJCDC/enrollment.html -->
+<!-- SJCDC LOGIN PAGE -->
+<!-- PATH: SJCDC/login.php -->
 
 <header>
 <!-- The bar used for navigation across webpages -->
@@ -36,44 +35,30 @@
 		</ul>
 	</nav>
 	
-	<a class="enroll" href="login.php">LOGIN</a>
+	<a class="enroll" href="enrollment.html">PRE-REGISTER</a>
 </div>
 </header>
 
-<!-- The main content of the page -->
 <main>
-<div class="page-background">
-	<img src="images/enrollment-bg.jpg">
-	<img src="images/sjcdc.png">
-</div>
+<style>
+	body {
+		background: url("images/enrollment-bg.jpg") center/cover no-repeat fixed;
+	}
+	.enrollment-form {
+		margin: auto;
+		margin-top: 25vh;
+		width: 25vw;
+		border-radius: 0.5rem;
+	}
+</style>
 
-<form class="enrollment-form" action="insert.php" method="post">
-	<form-header>For New Students</form-header>
-	<div class="input-flex">
-		<div class="input-flex-item">
-			<label for="firstName">First Name:</label>
-			<input type="text" name="firstName" id="firstName" placeholder="Juan" required>
-		</div>
-		<div class="input-flex-item">
-			<label for="lastName">Last Name:</label>
-			<input type="text" name="lastName" id="lastName" placeholder="Dela Cruz" required>
-		</div>
-		<div class="input-flex-item" style="flex: 0.15; display: block;">
-			<label for="sex">Sex:</label>
-			<select name="sex" id="sex">
-				<option value="M">Male</option>
-				<option value="F">Female</option>
-			</select>
-		</div>
-	</div>
+<div style="width: 100vw; height: 75vh;">
+<form class="enrollment-form" action="status.php" method="post">
+	<form-header>Login</form-header>
 	<div class="input-flex">
 		<div class="input-flex-item">
 			<label for="emailAddress">Email Address:</label>
 			<input type="text" name="emailAddress" id="emailAddress" placeholder="juandelacruz@email.com" required>
-		</div>
-		<div class="input-flex-item">
-			<label for="primaryAddress">Address:</label>
-			<input type="text" name="primaryAddress" id="primaryAddress" placeholder="Blk 123 Lot 456 St. Brgy. Ginebra Dasmarinas City" required>
 		</div>
 	</div>
 	<div class="input-flex">
@@ -85,30 +70,14 @@
 	<div class="input-flex">
 		<div class="input-flex-item">
 			<input type="submit">
+			<p><?php echo $error; ?></p>
 		</div>
 	</div>
 </form>
-
-<!-- Contact information of the page -->
-<div id="contact">
-	<center>
-		<p>OFFICIAL ACCOUNTS</p>
-		<br>
-		<!-- Facebook -->
-		<a href="https://www.facebook.com/stjudecollegedasmarinas" target="_blank"><img src="images/facebook.png"></a>
-		<!-- Twitter -->
-		<a href="#contact"><img src="images/twitter.png"></a>
-		<!-- Instagram -->
-		<a href="#contact"><img src="images/instagram.png"></a>
-		<!-- YouTube -->
-		<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
-	</center>
 </div>
-	
-</main>
 
 <footer>
-<div>
+	<div>
 		<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
 		<p>Contact us: (046) 417-5232 | 0917-630-1064</p>
 		<p>Address: Carlos Trinidad Avenue, Salitran IV City of Dasmarinas Cavite</p>
@@ -122,7 +91,6 @@
 		<p>Jake Carl Marwin Amora &nbsp;|&nbsp; 09123456789</p>
 	</div>
 </footer>
-
-<script src="scripts/index.js"></script>
+</main>
 </body>
 </html>

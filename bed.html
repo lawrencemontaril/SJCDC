@@ -7,7 +7,7 @@
 	<!-- Page icon -->
 	<link rel="icon" href="images/logo.png">
 	<!-- Link stylesheet -->
-	<link rel="stylesheet" href="style.css" type="text/css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<!-- Raleway font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,12 +19,13 @@
 <!-- SJCDC BASIC EDUCATION PAGE -->
 <!-- PATH: SJCDC/bed.html -->
 
-<header id="header">
-
-	<!-- The bar used for navigation across webpages -->
+<header>
+<!-- The bar used for navigation across webpages -->
+<div id="navbar">
 	<div class="logo">
 		<a href="index.html"><img src="images/logo.png" alt="logo"></a>
 	</div>
+	
 	<nav>
 		<ul class="nav_links">
 			<li><a href="index.html">HOME</a></li>
@@ -33,102 +34,163 @@
 			<li><a href="college.html">COLLEGE</a></li>
 		</ul>
 	</nav>
-	<a class="enroll"  href="enrollment.html">ENROLL NOW!</a>
-
+	
+	<a class="enroll" href="enrollment.html">PRE-REGISTER NOW!</a>
+</div>
 </header>
-
-<img class="mask mask1" src="images/bed.png">
 
 <!-- The main content of the page -->
 <main>
+<div class="page-background">
+	<img src="images/bed-bg.jpg">
+	<img src="images/bed.png">
+</div>
 
-	<nav>
-		<ul class="page-nav-links">
-			<li><a href="#">WHAT WE OFFER</a></li>
-			<li><a href="#">QUALIFICATIONS</a></li>
-			<li><a href="#">REQUIREMENTS</a></li>
-		</ul>
-	</nav>
+<nav>
+	<ul class="page-nav-links">
+		<li><a href="#qualifications">QUALIFICATIONS</a></li>
+		<li><a href="#requirements">REQUIREMENTS</a></li>
+	</ul>
+</nav>
 
-	<div class="container">
-		<h4>We offer:</h4>
-		<ul>
-			<li>Early Childhood Programs (Nursery, Pre-kinder, Kinder)</li>
-			<li>Elementary Programs (Grade 1-6)</li>
-			<li>Junior High School Programs</li>
-		</ul>
-	</div>
+<div class="container">
+	<h4>We offer:</h4>
+	<ul>
+		<li>Early Childhood Programs (Nursery, Pre-kinder, Kinder)</li>
+		<li>Elementary Programs (Grade 1-6)</li>
+		<li>Junior High School Programs</li>
+	</ul>
+	<br>
+</div>
 
-	<div class="container">
-		<h4>Admission Requirements:</h4>
-		<ul>
-			<li>Assessment Exam <i>(for Junior High Only)</i></li>
-			<li>Report Card (Form 138) w/ LRN No.</li>
-			<li>Form 137</li>
-			<li>Certificate of Good Moral Character</li>
-			<li>2pcs 2x2 colored ID Picture white background and name tag</li>
-			<li>2pcs long brown envelopes</li>
-			<li>1 original PSA Birth Certificate</li>
-			<li>2 mailing stamps</li>
-			<li>1pc long white folder</li>		
-		</ul>
-	</div>
-
-	<section id="nursery" class="dept">
-
-		<div class="img-txt">
+<!-- Nursery Section -->
+<section id="nursery" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
 			<img src="images/bed-nursery.jpg">
-			<div class="img-txt-title">
+			<div class="program-card-image-header">
 				<p>Nursery</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
 			</div>
 		</div>
-		
-		<div class="img-txt-desc">
-			<p class="img-txt-desc">St. Jude College Dasmarinas offers nursery education.</p>
+
+		<div class="program-card-text">
+		<p>In nursery, the children build their social skills, language skills, and self-control by playing and learning together. With support from teachers, children learn to resolve conflicts that may come up during play. Emotional development lets your child understand his feelings and the feelings of others.</p>
 		</div>
-	
-	</section>
+	</div>
+</section>
 
-	<section id="kinder" class="dept">
+<!-- Kindergarten Section -->
+<section id="kinder" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>Once enrolled in kindergarten, your child will learn basic concepts like reading, writing, math, science, time, shapes, and more. These skills will form a foundation for learning future concepts in each subject. Additionally, they learn important social skills as well as how to function in a school environment.</p>
+		</div>
 
-		<div class="img-txt">
+		<div class="program-card-image">
 			<img src="images/bed-kindergarten.jpeg">
-			<div class="img-txt-title">
+			<div class="program-card-image-header">
 				<p>Kindergarten</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
 			</div>
 		</div>
-		
-		<div class="img-txt-desc">
-			<p class="img-txt-desc">St. Jude College Dasmarinas offers kindergarten education.</p>
-		</div>
+	</div>
+</section>
 
-	</section>
-
-	<section id="elementary" class="dept">
-
-		<div class="img-txt">
+<!-- Elementary Section -->
+<section id="elementary" class="dept">
+	<div class="program-card">
+		<div class="program-card-image">
 			<img src="images/bed-elementary.jpg">
-			<div class="img-txt-title">
+			<div class="program-card-image-header">
 				<p>Elementary</p>
-				<br>
-				<a href="enrollment.html">Enroll</a>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
 			</div>
 		</div>
-		
-		<div class="img-txt-desc">
-			<p class="img-txt-desc">St. Jude College Dasmarinas offers elementary education.</p>
+
+		<div class="program-card-text">
+			<p>The elementary school years are packed with learning, as kids explore the fundamentals like reading, writing, math, science, and social studies. In grade school, children also develop important social and emotional skills that will carry them into adulthood, primarily how to make friends and cooperate with others.</p>
+		</div>
+	</div>
+</section>
+
+<!-- Junior High School Section -->
+<section id="jhs" class="dept">
+	<div class="program-card">
+		<div class="program-card-text">
+			<p>After completing primary education, students can continue on to lower secondary education. In the Philippines, this is called Junior High School (JHS). Students complete Junior High School by taking exams for the Junior High School Diploma.</p>
 		</div>
 
-	</section>
+		<div class="program-card-image">
+			<img src="images/bed-elementary.jpg">
+			<div class="program-card-image-header">
+				<p>Junior High School (Grade 7-10)</p>
+				<a class="pre-reg" href="enrollment.html">PRE-REGISTER</a>
+			</div>
+		</div>
+	</div>
+</section>
 
-</main>
+<nav>
+	<ul class="page-nav-links">
+		<li><a href="#">BACK TO TOP</a></li>
+	</ul>
+</nav>
+
+<div class="container">
+
+	<h4 id="qualifications">Qualifications</h4>
+	<ol>
+		<li>Nursery</li>
+		<ul>
+			<li>The applicant must already be four (4) years old by June 1, 2020.</li>
+		</ul>
+		<li>Kindergarten</li>
+		<ul>
+			<li>The applicant must already be five (5) years old by June 1, 2020. Kindergarten applicants who will turn five (5) years old after June 1, 2020 will take an entrance exam and the Guidance Counselors will have to assess the student.</li>
+		</ul>
+	</ol>
+	<br>
+
+	<h4 id="requirements">Admission Requirements:</h4>
+	<ul>
+		<li>Assessment Exam <i>(for Junior High Only)</i></li>
+		<li>Report Card (Form 138) w/ LRN No.</li>
+		<li>Form 137</li>
+		<li>Certificate of Good Moral Character</li>
+		<li>2pcs 2x2 colored ID Picture white background and name tag</li>
+		<li>2pcs long brown envelopes</li>
+		<li>1 original PSA Birth Certificate</li>
+		<li>2 mailing stamps</li>
+		<li>1pc long white folder</li>		
+	</ul>
+	<br>
+
+	<h4>For Old Students</h4>
+	<ul>
+		<li>Report Card (Form 138) w/ LRN No.</li>
+		<li>Certificate of Good Moral Character</li>
+	</ul>
+	<br>
+
+	<h4>For Transferees:</h4>
+	<ul>
+		<li>Assessment Exam</li>
+		<li>3 pcs 2x2 ID pictures with name tag & white background</li>
+		<li>Transcript of Records</li>
+		<li>Photocopy PSA Birth Certificate</li>
+		<li>Certificate of Eligiblity to transfer</li>
+		<li>Certificate of Good Moral Character</li>
+		<li>2pcs White Mailing Envelopes (long)</li>
+		<li>2pcs Mailing Stamps</li>
+		<li>2pcs Long Brown Envelopes</li>
+		<li>1pc Long White Folder</li>
+	</ul>
+</div>
 
 <!-- Contact information of the page -->
-<section id="contact">
+<div id="contact">
+
 	<center>
 		<p>OFFICIAL ACCOUNTS</p>
 		<br>
@@ -141,14 +203,26 @@
 		<!-- YouTube -->
 		<a href="https://www.youtube.com/@st.judecollegedasmarinas5822" target="_blank"><img src="images/youtube.png"></a>
 	</center>
-</section>
+</div>	
+	
+</main>
 
 <footer>
+	<div>
+		<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
+		<p>Contact us: (046) 417-5232 | 0917-630-1064</p>
+		<p>Address: Carlos Trinidad Avenue, Salitran IV City of Dasmarinas Cavite</p>
+	</div>
 
-	<p>St. Jude College Dasmarinas &COPY; 2022. All Rights Reserved.</p>
-
+	<p><b>Developers:</b></p>
+	<div style="padding-top: 0.5rem;">
+		<p>Lawrence Montaril &nbsp;|&nbsp;  09123456789</p>
+		<p>Kim Gabriel Magan &nbsp;|&nbsp; 09123456789</p>
+		<p>Jasper Jon Garcia &nbsp;|&nbsp; 09123456789</p>
+		<p>Jake Carl Marwin Amora &nbsp;|&nbsp; 09123456789</p>
+	</div>
 </footer>
 
-<script src="scripts/dept.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 </html>
